@@ -1,0 +1,15 @@
+.heading2{
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    color: black;
+    background-color: orchid;
+    line-height: 80px;
+}
+.heading2:hover{
+            color: orchid;
+            background-color: black;
+        }
+.myimage{
+    float: right;
+}

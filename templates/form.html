@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <style>
+        legend{
+            font-weight: bold;
+            font-size: 40px;
+            
+        }
+        img{
+            
+            border-radius: 5px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+<center><img src="{% static 'images/rec.png' %}" alt=""></center>
+<a href="{% url 'home' %}" class="btn btn-dark">Home</a>
+<a href="{% url 'about' %}" class="btn btn-dark">About</a>
+<form action="" class="bg-secondary-subtle ms-5 p-5">
+   <legend class="text-center text-primary bg-secondary-subtle">PATIENT RECORDS</legend>
+    <div class="form-floating mt-3 mb-3 ">
+        <input type="text" placeholder="Enter Firstname" class="form-control" id="fname" required="required">
+        <label for="fname">Firstname</label>
+    </div>
+    <div class="form-floating  mb-3 ">
+        <input type="text" placeholder="Enter surname" class="form-control" id="sname" required="required">
+        <label for="sname">Surname</label>
+    </div>
+    <div class="form-floating mt-3 mb-3 ">
+        <input type="email" placeholder="Enter email" class="form-control" id="mail" required="required">
+        <label for="mail">Email Address</label>
+    </div>
+    <div class="form-floating mt-3 mb-3 ">
+        <input type="password" placeholder="Enter Password" class="form-control" id="pwd" required="required">
+        <label for="pwd">Password</label>
+    </div>
+    
+    <div class="d-grid">
+        <button class="btn btn-outline-primary">Create</button>
+    </div>
+</form>
+</body>
+</html>

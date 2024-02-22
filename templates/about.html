@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'images/mu2.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+            border: 2px solid orchid;
+            border-collapse: collapse;
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            font-family: cursive;
+            color: black;
+            background-color: orchid;
+            line-height: 80px;
+        }
+        h1:hover{
+            color: orchid;
+            background-color: black;
+        }
+        p{
+            font-family: cursive;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        table, th, td{
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        td{
+            background-color: #ccf59f;
+            padding-left: 20px;
+        }
+        table{
+            width:80%;
+            height:400px;
+            margin-left:80px;
+            margin-top:30px;
+        }
+        th{
+            background-color: #67a12f;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+<h1>ABOUT</h1>
+<a href="{% url 'home'%}" class="btn btn-dark">Home</a>
+<a href="{% url 'form'%}" class="btn btn-dark">Records</a>
+<br>
+<img src="{% static 'images/bkam.jpeg' %}" alt="">
+<img src="{% static 'images/bkama.jpeg' %}" alt="">
+<table>
+    <thead>
+    <th>Product ID</th>
+    <th>Product Name</th>
+    <th>Product Quality</th>
+    <th>Product Quantity</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Wheat</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Rice</td>
+        <td>Good</td>
+        <td>250 Bags</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sugar</td>
+        <td>Good</td>
+        <td>200 Bags</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+</body>
+</html>
